@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fiasta Admin — لوحة التحكم</title>
+<link rel="stylesheet" href="/shared/fiasta.css">
+</head>
+<body>
+<div class="admin-layout">
+  <div class="admin-side" id="side">
+    <div class="brand"><div class="logo">F</div> Fiasta Admin</div>
+    <div id="nav"></div>
+    <div style="position:absolute;bottom:16px;inset-inline-start:12px;inset-inline-end:12px">
+      <button class="btn secondary sm" style="width:100%" onclick="FIA.store.token='';location.reload()">خروج / Logout</button>
+    </div>
+  </div>
+  <div class="admin-main" id="main"></div>
+</div>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/shared/app.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

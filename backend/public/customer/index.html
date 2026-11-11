@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Fiasta — توصيل جدة</title>
+<link rel="stylesheet" href="/shared/fiasta.css">
+<style>
+  .cat-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .step-dots { display: flex; gap: 6px; justify-content: center; margin: 6px 0 14px; }
+  .step-dots i { width: 8px; height: 8px; border-radius: 50%; background: #CBD5E1; }
+  .step-dots i.on { background: var(--blue); width: 22px; border-radius: 99px; }
+  .item-row { display: flex; align-items: center; gap: 10px; padding: 10px 0; border-bottom: 1px solid var(--line); }
+  .qty-btn { width: 30px; height: 30px; border-radius: 9px; border: 1.5px solid var(--line); background: #fff; font-size: 16px; font-weight: 800; cursor: pointer; color: var(--navy-800); }
+  .addr-opt { padding: 12px; border: 1.5px solid var(--line); border-radius: 12px; margin-bottom: 8px; cursor: pointer; }
+  .addr-opt.sel { border-color: var(--blue); background: #F5F8FF; }
+  .photo-drop { border: 2px dashed var(--line); border-radius: 12px; padding: 18px; text-align: center; color: var(--muted); cursor: pointer; }
+</style>
+</head>
+<body>
+<div class="app-shell" id="shell">
+  <div id="view"></div>
+</div>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/shared/app.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

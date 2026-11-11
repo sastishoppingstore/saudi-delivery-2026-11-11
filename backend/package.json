@@ -1,0 +1,20 @@
+{
+  "name": "saudi-delivery-backend",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Delivery platform API for Saudi Arabia (customer, driver, admin)",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node --disable-warning=ExperimentalWarning src/server.js",
+    "dev": "node --watch --disable-warning=ExperimentalWarning src/server.js",
+    "test": "node --test --disable-warning=ExperimentalWarning test/*.test.js"
+  },
+  "engines": {
+    "node": ">=22.13"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "socket.io": "^4.8.1"
+  }
+}
